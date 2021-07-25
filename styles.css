@@ -1,0 +1,169 @@
+/*Master styes*/
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/*Navigation Bar and Name*/
+
+.linkstostuff{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.nametext{
+    padding: 28px;
+    background-color: #8a8a8a;
+    font-size: larger;
+}
+
+.leftside{
+    display: flex;
+}
+.rightside{
+    display: flex;
+}
+
+.navbar > .linkstostuff >.leftside > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.navbar > .linkstostuff >.rightside > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navlinkwrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navlinkwrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navlinkwrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.navlinkwrapper a:hover {
+    color: black;
+}
+
+
+/*Pictures Styles*/
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100x;
+
+}
+
+.logo-wrapper img{
+    width:70%;
+    margin-bottom: 20px;
+}
+
+.img-darken{
+    transition: .5s;
+    filter: brightness(10%);
+}
+
+
+
+/*About Page*/
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 20%;
+}
+
+.bio-wrapper{
+    padding: 30px;
+
+}
+.bio-wrapper h1{
+    color: #0a75ad;
+}
+
+
+/* CQED and other pages */
+.cqed-wrapper{
+    padding: 50px;
+}
+.cqed-header{
+    color:#0a75ad
+}
+.courses-wrapper{
+    padding:50px;
+}
+.courses-header{
+    color:#0a75ad
+}
+.chess-wrapper{
+    padding:50px;
+}
+.chess-header{
+    color:#0a75ad
+}
+.pets-wrapper{
+    padding:50px;
+}
+.pets-header{
+    color:#0a75ad
+}
+.pets-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.petpic img{
+    display: block;
+    height: 350px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
